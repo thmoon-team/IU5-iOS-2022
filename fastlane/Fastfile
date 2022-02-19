@@ -20,4 +20,18 @@ platform :ios do
   lane :tests do
   	run_tests(scheme: "LABS")
   end
+
+  desc "Unit test"
+  lane :unit_tests do
+
+    update_code_signing_settings(
+      path: "LABS.xcodeproj"
+    )
+    scan(
+      scheme: "LABS",
+      output_directory: "./fastlane/test_output/unit_tests_output",
+      clean: true
+    )
+  end
 end
+
