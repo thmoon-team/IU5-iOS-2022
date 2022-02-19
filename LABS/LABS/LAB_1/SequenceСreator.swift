@@ -11,7 +11,7 @@ import Foundation
 
 final class SequenceСreator {
     
-    // Функция получает на вход подвется целое число N
+    // Функция получает на вход целое число N
     // и аозвращает массив целых чисел от 1 до N.
     // Если N меньше единицы, то функция должна вернуть вернуть пустой массив.
     // Пример:
@@ -22,12 +22,13 @@ final class SequenceСreator {
     // на выходе получаем - []
     
     static func createSequenceFromZeroTo(finalElement: Int) -> [Int] {
-        let sequence = [Int]()
-        
-        return sequence
+        //
+        // Код пишем тут
+        //
+        return []
     }
     
-    // Функция получает на вход подвется целое число N
+    // Функция получает на вход целое число N
     // и аозвращает массив целых чисел от N до 1.
     // Если N меньше единицы, то функция должна вернуть вернуть пустой массив.
     // Пример:
@@ -38,8 +39,9 @@ final class SequenceСreator {
     // на выходе получаем - []
     
     static func createReversedSequenceToZeroFrom(finalElement: Int) -> [Int] {
-        let sequence = [Int]()
-        
-        return sequence
+        //
+        // Код пишем тут
+        //
+        return []
     }
 }
