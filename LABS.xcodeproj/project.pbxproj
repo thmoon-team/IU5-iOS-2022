@@ -15,6 +15,9 @@
 		78052E9927BA89A700BB3916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78052E9727BA89A700BB3916 /* LaunchScreen.storyboard */; };
 		78052EBF27BA8AC300BB3916 /* SequenceСreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78052EBE27BA8AC300BB3916 /* SequenceСreator.swift */; };
 		78052EC227BA8C7A00BB3916 /* TestReversedSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78052EC127BA8C7A00BB3916 /* TestReversedSequence.swift */; };
+		7844CB9027C1A34200B4A094 /* NumberToArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CB8F27C1A34200B4A094 /* NumberToArray.swift */; };
+		7844CB9227C1A5BE00B4A094 /* SquareSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CB9127C1A5BE00B4A094 /* SquareSum.swift */; };
+		7844CB9427C1A72600B4A094 /* BooleanConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CB9327C1A72600B4A094 /* BooleanConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,9 @@
 		78052E9F27BA89A700BB3916 /* LABSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LABSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78052EBE27BA8AC300BB3916 /* SequenceСreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SequenceСreator.swift"; sourceTree = "<group>"; };
 		78052EC127BA8C7A00BB3916 /* TestReversedSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestReversedSequence.swift; sourceTree = "<group>"; };
+		7844CB8F27C1A34200B4A094 /* NumberToArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberToArray.swift; sourceTree = "<group>"; };
+		7844CB9127C1A5BE00B4A094 /* SquareSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareSum.swift; sourceTree = "<group>"; };
+		7844CB9327C1A72600B4A094 /* BooleanConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				78052EBE27BA8AC300BB3916 /* SequenceСreator.swift */,
+				7844CB8F27C1A34200B4A094 /* NumberToArray.swift */,
+				7844CB9127C1A5BE00B4A094 /* SquareSum.swift */,
+				7844CB9327C1A72600B4A094 /* BooleanConverter.swift */,
 			);
 			path = LAB_1;
 			sourceTree = "<group>";
@@ -227,7 +236,10 @@
 			files = (
 				78052E9127BA89A500BB3916 /* ViewController.swift in Sources */,
 				78052E8D27BA89A500BB3916 /* AppDelegate.swift in Sources */,
+				7844CB9027C1A34200B4A094 /* NumberToArray.swift in Sources */,
 				78052EBF27BA8AC300BB3916 /* SequenceСreator.swift in Sources */,
+				7844CB9427C1A72600B4A094 /* BooleanConverter.swift in Sources */,
+				7844CB9227C1A5BE00B4A094 /* SquareSum.swift in Sources */,
 				78052E8F27BA89A500BB3916 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
