@@ -25,7 +25,7 @@ final class SequenceСreator {
         //
         // Код пишем тут
         //
-        return [1,2,3,4,5]
+        return []
     }
     
     // Функция получает на вход целое число N
@@ -42,6 +42,6 @@ final class SequenceСreator {
         //
         // Код пишем тут
         //
-        return [5,4,3,2,1]
+        return []
     }
 }
