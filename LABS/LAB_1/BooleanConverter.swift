@@ -11,7 +11,7 @@ import Foundation
 
 final class BooleanConverter {
     
-    enum BoolValues {
+    enum BoolValues: Equatable {
         case yes
         case no
         case veryBad(value: String)
