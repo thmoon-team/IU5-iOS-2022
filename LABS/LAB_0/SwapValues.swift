@@ -17,7 +17,7 @@ final class SwapValues {
         
         // MARK: Internal
         
-        static func == (lhs: SwapValues.EmployeePayroll, rhs: SwapValues.EmployeePayroll) -> Bool {
+        static func == (lhs: EmployeePayroll, rhs: EmployeePayroll) -> Bool {
             lhs.puppaSalary == rhs.puppaSalary && lhs.luppaSalary == rhs.luppaSalary
         }
         
