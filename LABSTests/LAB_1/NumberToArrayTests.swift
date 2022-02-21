@@ -27,6 +27,6 @@ final class NumberToArrayTests: XCTestCase {
     
     func testWithZeroNumber() {
         let number = 0
-        XCTAssertEqual(NumberToArray.createArrayBy(number: number), [0])
+        XCTAssertEqual(NumberToArray.createArrayBy(number: number), [])
     }
 }
