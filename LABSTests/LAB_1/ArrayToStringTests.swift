@@ -12,7 +12,12 @@ final class ArrayToStringTests: XCTestCase {
 
     func testRegularArray() {
         let array = [1,2,3,5,7,8,9,10]
-        XCTAssertEqual(ArrayToStringConverter.convertToString(array: array), "1-3,5,7-9,10")
+        XCTAssertEqual(ArrayToStringConverter.convertToString(array: array), "1-3,5,7-10")
+    }
+    
+    func testNonStringSrray() {
+        let array = [1,3,5,7,9,11]
+        XCTAssertEqual(ArrayToStringConverter.convertToString(array: array), "1,3,5,7,9,11")
     }
     
     func testConsecutiveArray() {
