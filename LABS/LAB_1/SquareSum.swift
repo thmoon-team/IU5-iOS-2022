@@ -26,9 +26,10 @@ final class SquareSum {
     // на выходе получаем: 0
     
     static func squareSumFor(arrayOfNumber: [Int]) -> Int {
-        //
-        // Код пишем тут
-        //
-        return 0
+        var squareSum: Int = 0
+        for i in 0..<arrayOfNumber.count {
+            squareSum += arrayOfNumber[i] * arrayOfNumber[i]
+        }
+        return squareSum
     }
 }

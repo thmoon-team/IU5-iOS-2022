@@ -49,9 +49,10 @@ final class SwapValues {
     // MARK: Internal
 
     static func swap(employeePayroll: EmployeePayroll) -> EmployeePayroll {
-        //
-        // Код пишем тут
-        //
+        var buf: Int = 0
+        buf = employeePayroll.luppaSalary
+        employeePayroll.luppaSalary = employeePayroll.puppaSalary
+        employeePayroll.puppaSalary = buf
         return employeePayroll
     }
 }

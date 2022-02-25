@@ -22,10 +22,14 @@ final class SequenceСreator {
     // на выходе получаем: []
     
     static func createSequenceFromZeroTo(finalElement: Int) -> [Int] {
-        //
-        // Код пишем тут
-        //
-        return []
+        guard finalElement >= 1 else {
+            return []
+        }
+        var arr: [Int] = []
+        for i in 1...finalElement {
+            arr.append(i)
+        }
+        return arr
     }
     
     // Функция получает на вход целое число N
@@ -39,9 +43,13 @@ final class SequenceСreator {
     // на выходе получаем - []
     
     static func createReversedSequenceToZeroFrom(finalElement: Int) -> [Int] {
-        //
-        // Код пишем тут
-        //
-        return []
+        guard finalElement >= 1 else {
+            return []
+        }
+        var arr: [Int] = []
+        for i in 0..<finalElement {
+            arr.append(finalElement - i)
+        }
+        return arr
     }
 }

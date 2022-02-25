@@ -25,7 +25,30 @@ final class ArrayToStringConverter {
     // на выходе получаем: "1-5,10,14-17,20"
     
     static func convertToString(array: [Int]) -> String {
-        // код писать тут
-        return ""
+        var string: String = ""
+        var isEnum: Bool = false
+        for i in 0..<array.count {
+            if i != array.count - 1 {
+                if array[i+1] == array[i] + 1 && isEnum == false {
+                    string = string + String(array[i]) + "-"
+                    isEnum = true
+                }
+                else if array[i+1] == array[i] + 1 && isEnum == true {
+                    continue
+                }
+                else if array[i+1] != array[i] + 1 && isEnum == true {
+                    string = string + String(array[i]) + ","
+                    isEnum = false
+                }
+                else {
+                    string = string + String(array[i]) + ","
+                }
+            }
+            else {
+                string = string + String(array[i])
+            }
+        }
+        print(string)
+        return string
     }
 }
