@@ -9,12 +9,12 @@ import Foundation
 
 // В реализации классов Student и University есть ошибка, приводящая к утечке памяти, найдите ее и исправьте.
 
-// Решение обоснуйте в блоке | Обоснование решения |.
+// Решение кратко обоснуйте в блоке | Обоснование решения |.
 // Например: /* Я сделал …, т.к. это красиво */
 
 /* | Обоснование решения | */
 
-class Student {
+final class Student {
     let name: String
     init(name: String) {
         self.name = name
@@ -24,7 +24,7 @@ class Student {
 
 
 
-class University {
+final class University {
     let universityName: String
     init(universityName: String) {
         self.universityName = universityName

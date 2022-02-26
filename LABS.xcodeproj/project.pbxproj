@@ -27,6 +27,12 @@
 		7844CBA027C2637B00B4A094 /* SwapValuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CB9F27C2637B00B4A094 /* SwapValuesTests.swift */; };
 		7844CBA327C91E3C00B4A094 /* ReferenceCycleResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CBA227C91E3B00B4A094 /* ReferenceCycleResolver.swift */; };
 		7844CBA627C9228800B4A094 /* ReferenceCycleResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CBA527C9228700B4A094 /* ReferenceCycleResolverTests.swift */; };
+		7844CBA827CA476900B4A094 /* ConcurrentPerform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CBA727CA476900B4A094 /* ConcurrentPerform.swift */; };
+		7844CBAA27CA47B000B4A094 /* CaptureLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CBA927CA47B000B4A094 /* CaptureLists.swift */; };
+		7844CBAC27CA55AF00B4A094 /* CaptureListsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CBAB27CA55AF00B4A094 /* CaptureListsTests.swift */; };
+		7844CBAE27CA72DB00B4A094 /* ConcurrentPerformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CBAD27CA72DB00B4A094 /* ConcurrentPerformTests.swift */; };
+		7844CBB027CADA8000B4A094 /* Shipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CBAF27CADA7F00B4A094 /* Shipment.swift */; };
+		7844CBB227CADCD000B4A094 /* ShipmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CBB127CADCD000B4A094 /* ShipmentTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +69,12 @@
 		7844CB9F27C2637B00B4A094 /* SwapValuesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapValuesTests.swift; sourceTree = "<group>"; };
 		7844CBA227C91E3B00B4A094 /* ReferenceCycleResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceCycleResolver.swift; sourceTree = "<group>"; };
 		7844CBA527C9228700B4A094 /* ReferenceCycleResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceCycleResolverTests.swift; sourceTree = "<group>"; };
+		7844CBA727CA476900B4A094 /* ConcurrentPerform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentPerform.swift; sourceTree = "<group>"; };
+		7844CBA927CA47B000B4A094 /* CaptureLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureLists.swift; sourceTree = "<group>"; };
+		7844CBAB27CA55AF00B4A094 /* CaptureListsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureListsTests.swift; sourceTree = "<group>"; };
+		7844CBAD27CA72DB00B4A094 /* ConcurrentPerformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentPerformTests.swift; sourceTree = "<group>"; };
+		7844CBAF27CADA7F00B4A094 /* Shipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shipment.swift; sourceTree = "<group>"; };
+		7844CBB127CADCD000B4A094 /* ShipmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				7844CBA227C91E3B00B4A094 /* ReferenceCycleResolver.swift */,
+				7844CBA927CA47B000B4A094 /* CaptureLists.swift */,
+				7844CBA727CA476900B4A094 /* ConcurrentPerform.swift */,
+				7844CBAF27CADA7F00B4A094 /* Shipment.swift */,
 			);
 			path = LAB_2;
 			sourceTree = "<group>";
@@ -188,6 +203,9 @@
 			isa = PBXGroup;
 			children = (
 				7844CBA527C9228700B4A094 /* ReferenceCycleResolverTests.swift */,
+				7844CBAB27CA55AF00B4A094 /* CaptureListsTests.swift */,
+				7844CBAD27CA72DB00B4A094 /* ConcurrentPerformTests.swift */,
+				7844CBB127CADCD000B4A094 /* ShipmentTests.swift */,
 			);
 			path = LAB_2;
 			sourceTree = "<group>";
@@ -296,11 +314,14 @@
 				7844CB9D27C2605D00B4A094 /* SwapValues.swift in Sources */,
 				78052E9127BA89A500BB3916 /* ViewController.swift in Sources */,
 				7844CBA327C91E3C00B4A094 /* ReferenceCycleResolver.swift in Sources */,
+				7844CBB027CADA8000B4A094 /* Shipment.swift in Sources */,
 				78052E8D27BA89A500BB3916 /* AppDelegate.swift in Sources */,
 				7844CB9027C1A34200B4A094 /* NumberToArray.swift in Sources */,
 				78052EBF27BA8AC300BB3916 /* SequenceСreator.swift in Sources */,
 				7844CB9427C1A72600B4A094 /* BooleanConverter.swift in Sources */,
 				7844CB9227C1A5BE00B4A094 /* SquareSum.swift in Sources */,
+				7844CBAA27CA47B000B4A094 /* CaptureLists.swift in Sources */,
+				7844CBA827CA476900B4A094 /* ConcurrentPerform.swift in Sources */,
 				78052E8F27BA89A500BB3916 /* SceneDelegate.swift in Sources */,
 				15350EA627C23C01000CDAC3 /* ArrayToString.swift in Sources */,
 			);
@@ -310,8 +331,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7844CBAC27CA55AF00B4A094 /* CaptureListsTests.swift in Sources */,
 				7844CBA027C2637B00B4A094 /* SwapValuesTests.swift in Sources */,
 				7844CB9827C25A0400B4A094 /* SquareSumTests.swift in Sources */,
+				7844CBB227CADCD000B4A094 /* ShipmentTests.swift in Sources */,
+				7844CBAE27CA72DB00B4A094 /* ConcurrentPerformTests.swift in Sources */,
 				78052EC227BA8C7A00BB3916 /* ReversedSequenceTests.swift in Sources */,
 				7844CBA627C9228800B4A094 /* ReferenceCycleResolverTests.swift in Sources */,
 				7844CB9627C24D6B00B4A094 /* NumberToArrayTests.swift in Sources */,
