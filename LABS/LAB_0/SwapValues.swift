@@ -50,7 +50,7 @@ final class SwapValues {
 
     static func swap(employeePayroll: EmployeePayroll) -> EmployeePayroll {
         //
-        // Код пишем тут
+        (employeePayroll.luppaSalary, employeePayroll.puppaSalary) = (employeePayroll.puppaSalary, employeePayroll.luppaSalary)
         //
         return employeePayroll
     }
