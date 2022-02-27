@@ -16,20 +16,24 @@ import Foundation
 
 final class Student {
     let name: String
+    
+    var university: University?
+    
     init(name: String) {
         self.name = name
     }
-    var university: University?
 }
 
 
 
 final class University {
     let universityName: String
+    
+    var student: Student?
+    
     init(universityName: String) {
         self.universityName = universityName
     }
-    var student: Student?
 }
 
 final class ReferenceCycleResolver {
