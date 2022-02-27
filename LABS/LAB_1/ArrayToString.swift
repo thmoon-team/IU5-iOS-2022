@@ -32,7 +32,6 @@ final class ArrayToStringConverter {
         
         var result : String = ""
         var startVal : Int = array[0]
-        var lastVal : Int
         
         for i in 1..<array.count{
             if(abs(array[i-1] - array[i]) <= 1){
