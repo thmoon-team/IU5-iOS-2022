@@ -33,41 +33,38 @@ final class ArrayToStringConverter {
                          }
 
                          var str = ""
-                         var buffStr = ""
-                         var numIndex = 0
-                         
+                         var first = 1
+                         var numElement = 0
 
-            for i in 0..<array.count{
-                
-                numIndex = min(numIndex, i)
-                buffStr = "\(array[numIndex])"
-                                 
-                             
-                             if i > 1 && array[i-1] == array[i] + 1 {
-                                 buffStr += "-\(array[i])"
-                             }
-                             else {
-                                 buffStr = "\(array[i])"
-                             }
+        for i in 1..<array.count{
+                 if(array[i] - array[i - 1] == 1){
+                     numElement += 1
+                 }
 
-                             if i < array.count - 1 {
-                                 buffStr += ","
-                             }
-                             str += buffStr
-                             
-                             
+                 if(i == array.count-1 || array[i] - array[i - 1] != 1){
+                     str += "\(first)"
+                    
+                   if( i == array.count-1 && numElement == 0){
+                       str += ",\(array[array.count-1])"
+                   }
+                    
+                   if(numElement > 0){
+                     if(i != array.count-1){
+                       str += "-\(array[i-1])"
+                     }
+                     else{
+                       str += "-\(array[i])"
+                     }
+                     numElement = 0
+                     first = array[i]
+                   }
+                 if(i < array.count-1){
+                   str += ","
+                 }
+                 first = array[i]
+                 }
+               }
 
-                             
-                         
-                         if array[array.count - 2] + 1 != array[array.count - 1] {
-                             str += "\(array[array.count - 1])"
-                         }
-                numIndex = i
-                
-            }
-                         return str //как-то что то не так пошло, не успеваю в дедлайн дописать, исправлю позже :/
-                
-                
-    }
-                              
-}
+        return str
+
+    }}
