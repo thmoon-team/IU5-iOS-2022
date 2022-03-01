@@ -26,31 +26,18 @@ final class NumberToArray {
     // на выходе получаем: []
     
     static func createArrayBy(number: Int) -> [Int] {
-       
-        var bufNum : Int = number
-        var Array : [Int] = []
-        var sign : Int = 1
-        var count : Int = 1
-        
-        if(bufNum < 0){
-            sign = -1
-            bufNum = sign * bufNum
+        guard number != 0 else {
+            return []
         }
+        var Array: [Int] = []
+        var NumBuf = number
         
-        while (bufNum > 9){
-            bufNum = bufNum / 10
-            count = count*10
-        }
-        
-        bufNum  = sign * number
-        
-        while (bufNum > 0)
-        {
-            Array.append(sign*(bufNum / count))
-            bufNum = bufNum % count
-            count = count / 10
+        while NumBuf != 0 {
+            Array.insert(NumBuf % 10, at: 0)
+            NumBuf = NumBuf / 10
         }
         
         return Array
     }
 }
+ 

@@ -26,33 +26,33 @@ final class ArrayToStringConverter {
     
     static func convertToString(array: [Int]) -> String {
         
-        if (array.count == 0){
+        guard array.count > 0 else {
             return ""
         }
         
-        var result : String = ""
-        var startVal : Int = array[0]
+        var result: String = ""
+        var startVal: Int = array[0]
         
-        for i in 1..<array.count{
-            if(abs(array[i-1] - array[i]) <= 1){
+        for i in 1..<array.count {
+            if abs(array[i - 1] - array[i]) <= 1 {
                 continue
             } else {                                                                                                                         
-                if(startVal == array[i-1]){
+                if startVal == array[i - 1] {
                     result.append("\(startVal)")
                 } else {
-                    result.append("\(startVal)-\(array[i-1])")
+                    result.append("\(startVal)-\(array[i - 1])")
                 }
-                if(array[i-1] != array[array.count-1])
-                {
+                if array[i - 1] != array[array.count - 1] {
                     result.append(",")
                 }
                 startVal = array[i]
             }
         }
-        if(startVal == array[array.count-1]){  //проверка последнего элемента массива
+        //проверка последнего элемента массива
+        if startVal == array[array.count - 1] {
             result.append("\(startVal)")
         } else {
-            result.append("\(startVal)-\(array[array.count-1])")
+            result.append("\(startVal)-\(array[array.count - 1])")
         }
         return result
     }

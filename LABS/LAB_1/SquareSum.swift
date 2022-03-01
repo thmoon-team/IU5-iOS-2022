@@ -27,10 +27,10 @@ final class SquareSum {
     
     static func squareSumFor(arrayOfNumber: [Int]) -> Int {
         
-        var sum : Int = 0
+        var sum = 0
         
-        for i in arrayOfNumber{
-            sum = sum + i * i
+        for i in arrayOfNumber {
+            sum += i * i
         }
         return sum
     }

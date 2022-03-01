@@ -23,10 +23,10 @@ final class SequenceСreator {
     
     static func createSequenceFromZeroTo(finalElement: Int) -> [Int] {
         
-        var sequence : [Int] = []
+        var sequence: [Int] = []
         if (finalElement > 0){
-        for i in 0..<finalElement{
-            sequence.append(i+1)
+        for i in 0..<finalElement {
+            sequence.append(i + 1)
             }
         }
         return sequence
@@ -44,11 +44,14 @@ final class SequenceСreator {
     
     static func createReversedSequenceToZeroFrom(finalElement: Int) -> [Int] {
         
+        guard finalElement > 0 else {
+            return []
+        }
+        
         var sequence : [Int] = []
-        if (finalElement > 0){
-        for i in 0..<finalElement{
-            sequence.append(finalElement-i)
-            }
+        
+        for i in 0..<finalElement {
+            sequence.append(finalElement - i)
         }
         return sequence
     }
