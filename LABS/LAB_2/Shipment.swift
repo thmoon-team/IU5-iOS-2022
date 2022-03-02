@@ -22,16 +22,22 @@ import Foundation
 final class Shipment {
     static func fruitShipment(pearsCount: Int, applesCount: Int, completion: @escaping (Int) -> ()) {
         var resultFruitCount = 0
-
+        let lock = NSLock()
         let pearsThread = Thread {
             for _ in 1...pearsCount {
+                lock.lock()
                 resultFruitCount += 1
+                lock.unlock()
             }
         }
+        pearsThread.
 
         let applesThread = Thread {
             for _ in 1...applesCount {
+                lock.lock()
                 resultFruitCount += 1
+                lock.unlock()
+                
             }
         }
 

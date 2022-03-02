@@ -12,7 +12,8 @@ import Foundation
 // Решение кратко обоснуйте в блоке | Обоснование решения |.
 // Например: /* Я сделал …, т.к. это красиво */
 
-/* | Обоснование решения | */
+/* | Я сделал одну из сильных ссылок слабой, так как объекты ссылаются друг на друга,
+     что приводит к невозможности освобождения их памяти | */
 
 final class Student {
     let name: String
@@ -29,7 +30,7 @@ final class Student {
 final class University {
     let universityName: String
     
-    var student: Student?
+    weak var student: Student?
     
     init(universityName: String) {
         self.universityName = universityName
