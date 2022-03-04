@@ -20,12 +20,40 @@ final class ArrayToStringConverter {
     // Пример:
     // на вход подаем: [1,2,3,5,6,7,9,10,15]
     // на выходе получаем: "1-3,5-7,9-10,15"
-    // ================================
+    // =================================
     // на вход подаем: [1,2,3,4,5,10,14,15,16,17,20]
     // на выходе получаем: "1-5,10,14-17,20"
     
     static func convertToString(array: [Int]) -> String {
-        // код писать тут
-        return ""
+        
+        guard array.count > 0 else {
+            return ""
+        }
+        
+        var result: String = ""
+        var startVal: Int = array[0]
+        
+        for i in 1..<array.count {
+            if abs(array[i - 1] - array[i]) <= 1 {
+                continue
+            } else {                                                                                                                         
+                if startVal == array[i - 1] {
+                    result.append("\(startVal)")
+                } else {
+                    result.append("\(startVal)-\(array[i - 1])")
+                }
+                if array[i - 1] != array[array.count - 1] {
+                    result.append(",")
+                }
+                startVal = array[i]
+            }
+        }
+        //проверка последнего элемента массива
+        if startVal == array[array.count - 1] {
+            result.append("\(startVal)")
+        } else {
+            result.append("\(startVal)-\(array[array.count - 1])")
+        }
+        return result
     }
 }
