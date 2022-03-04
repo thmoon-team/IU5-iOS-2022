@@ -26,13 +26,13 @@ final class SquareSum {
     // на выходе получаем: 0
     
     static func squareSumFor(arrayOfNumber: [Int]) -> Int {
-        var k = 0
-        let arr = [Int]()
-        if arrayOfNumber == arr { return 0} //.isEmpty
+        var squareSum = 0
+        guard arrayOfNumber.count != 0 else {
+         return 0
+        }
         for i in 0..<arrayOfNumber.count{
-                k += arrayOfNumber[i]*arrayOfNumber[i] //pow(Double(k),2)
-            }
-        
-        return k
+         squareSum += Int(pow(Double(arrayOfNumber[i]),2))
+        }
+        return squareSum
     }
 }

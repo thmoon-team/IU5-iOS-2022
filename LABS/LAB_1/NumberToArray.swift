@@ -27,15 +27,15 @@ final class NumberToArray {
     
     static func createArrayBy(number: Int) -> [Int] {
         guard number != 0 else {
-                     return []
-                 }
+         return []
+        }
         var newArr: [Int] = []
         var newNum = number
-        
+    
                  while abs(newNum) > 0 {
-                     let lastNum = newNum % 10  
-                     newArr.append(lastNum)
-                     newNum /= 10
+                    let lastNum = newNum % 10
+                    newArr.append(lastNum)
+                    newNum /= 10
                  }
                  return newArr.reversed()
     }

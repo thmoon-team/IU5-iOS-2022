@@ -26,28 +26,26 @@ final class ArrayToStringConverter {
     
     static func convertToString(array: [Int]) -> String {
         guard !array.isEmpty else {
-                     return ""
-                 }
-                 guard array.count > 1 else {
-                     return "\(array[0])"
-                         }
+         return ""
+        }
+        guard array.count > 1 else {
+         return "\(array[0])"
+        }
 
-                         var str = ""
-                         var first = 1
-                         var numElement = 0
+        var str = ""
+        var buffElement = 1
+        var numElement = 0
 
         for i in 1..<array.count{
                  if(array[i] - array[i - 1] == 1){
-                     numElement += 1
+                  numElement += 1
                  }
 
                  if(i == array.count-1 || array[i] - array[i - 1] != 1){
-                     str += "\(first)"
-                    
+                     str += "\(buffElement)"
                    if( i == array.count-1 && numElement == 0){
                        str += ",\(array[array.count-1])"
                    }
-                    
                    if(numElement > 0){
                      if(i != array.count-1){
                        str += "-\(array[i-1])"
@@ -56,14 +54,14 @@ final class ArrayToStringConverter {
                        str += "-\(array[i])"
                      }
                      numElement = 0
-                     first = array[i]
+                     buffElement = array[i]
                    }
                  if(i < array.count-1){
                    str += ","
                  }
-                 first = array[i]
+                 buffElement = array[i]
                  }
-               }
+        }
 
         return str
 
