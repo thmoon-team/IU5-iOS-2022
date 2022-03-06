@@ -8,17 +8,13 @@
 import Foundation
 
 // В реализации классов Student и University есть ошибка, приводящая к утечке памяти, найдите ее и исправьте.
-
 // Решение кратко обоснуйте в блоке | Обоснование решения |.
 // Например: /* Я сделал …, т.к. это красиво */
 
 /* | Обоснование решения | */
-
 final class Student {
     let name: String
-    
     var university: University?
-    
     init(name: String) {
         self.name = name
     }
@@ -42,3 +38,4 @@ final class ReferenceCycleResolver {
         university.student = student
     }
 }
+

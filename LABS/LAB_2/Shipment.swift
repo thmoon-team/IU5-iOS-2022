@@ -1,4 +1,4 @@
-//
+ //
 //  Shipment.swift
 //  LABS
 //
@@ -22,16 +22,21 @@ import Foundation
 final class Shipment {
     static func fruitShipment(pearsCount: Int, applesCount: Int, completion: @escaping (Int) -> ()) {
         var resultFruitCount = 0
-
+        
+        
         let pearsThread = Thread {
+            DispatchQueue.main.sync {
             for _ in 1...pearsCount {
                 resultFruitCount += 1
+            }
             }
         }
 
         let applesThread = Thread {
+            DispatchQueue.main.sync {
             for _ in 1...applesCount {
                 resultFruitCount += 1
+            }
             }
         }
 
