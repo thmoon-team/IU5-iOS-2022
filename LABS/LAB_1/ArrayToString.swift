@@ -62,7 +62,5 @@ final class ArrayToStringConverter {
                  buffElement = array[i]
                  }
         }
-
         return str
-
     }}
