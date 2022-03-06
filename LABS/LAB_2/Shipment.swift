@@ -22,35 +22,22 @@ import Foundation
 final class Shipment {
     static func fruitShipment(pearsCount: Int, applesCount: Int, completion: @escaping (Int) -> ()) {
         var resultFruitCount = 0
-        let Lock=NSLock()  //Одно из них - NSLock.NSLock блокирует доступ к очереди извне. Важно! Если вы заблокировали поток, то вы должны своевременно его разблокировать.
-        let group=DispatchGroup()
-        
+
         let pearsThread = Thread {
-            group.enter()
             for _ in 1...pearsCount {
-                Lock.lock()
                 resultFruitCount += 1
-                Lock.unlock()
             }
-            group.leave()
         }
 
         let applesThread = Thread {
-            group.enter()
             for _ in 1...applesCount {
-                Lock.lock()
                 resultFruitCount += 1
-                Lock.unlock()
             }
-            group.leave()
         }
 
         pearsThread.start()
         applesThread.start()
-        
-        group.notify(queue: DispatchQueue.main) {    //используем последовательную очередь.
-         completion(resultFruitCount)
-                }
-        
+
+        completion(resultFruitCount)
     }
 }
