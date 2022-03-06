@@ -22,13 +22,13 @@ final class ConcurrentPerform {
         guard count > 0 else {
             return
         }
-        var TempVal = 0
-        var array = [Int]()
+        
         let lock = NSLock()
+        var array = [Int](repeating: 0, count: count)
+        
         DispatchQueue.concurrentPerform(iterations: count, execute: { index in
             lock.lock()
-            TempVal += 1
-            array.append(TempVal)
+            array[index] = index + 1
             lock.unlock()
         })
         completion(array)
