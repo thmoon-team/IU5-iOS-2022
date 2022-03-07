@@ -24,8 +24,9 @@ final class Shipment {
         var resultFruitCount = 0
         let group = DispatchGroup()
         let lock = NSLock()
+        
+        group.enter()
         let pearsThread = Thread {
-            group.enter()
             for _ in 1...pearsCount {
                 lock.lock()
                 resultFruitCount += 1
@@ -33,9 +34,9 @@ final class Shipment {
             }
             group.leave()
         }
-
+        
+        group.enter()
         let applesThread = Thread {
-            group.enter()
             for _ in 1...applesCount {
                 lock.lock()
                 resultFruitCount += 1
