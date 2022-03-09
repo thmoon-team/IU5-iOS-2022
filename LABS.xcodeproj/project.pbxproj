@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,6 +33,8 @@
 		7844CBAE27CA72DB00B4A094 /* ConcurrentPerformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CBAD27CA72DB00B4A094 /* ConcurrentPerformTests.swift */; };
 		7844CBB027CADA8000B4A094 /* Shipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CBAF27CADA7F00B4A094 /* Shipment.swift */; };
 		7844CBB227CADCD000B4A094 /* ShipmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CBB127CADCD000B4A094 /* ShipmentTests.swift */; };
+		8794018627D782180046C5D4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8794018527D782180046C5D4 /* TableViewController.swift */; };
+		8794018A27D7ABE30046C5D4 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8794018927D7ABE30046C5D4 /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		7844CBAD27CA72DB00B4A094 /* ConcurrentPerformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentPerformTests.swift; sourceTree = "<group>"; };
 		7844CBAF27CADA7F00B4A094 /* Shipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shipment.swift; sourceTree = "<group>"; };
 		7844CBB127CADCD000B4A094 /* ShipmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentTests.swift; sourceTree = "<group>"; };
+		8794018527D782180046C5D4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		8794018927D7ABE30046C5D4 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				78052E8E27BA89A500BB3916 /* SceneDelegate.swift */,
 				78052E9027BA89A500BB3916 /* ViewController.swift */,
 				78052E9227BA89A500BB3916 /* Main.storyboard */,
+				8794018527D782180046C5D4 /* TableViewController.swift */,
+				8794018927D7ABE30046C5D4 /* Cell.swift */,
 				78052E9527BA89A700BB3916 /* Assets.xcassets */,
 				78052E9727BA89A700BB3916 /* LaunchScreen.storyboard */,
 			);
@@ -130,8 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				7801412927D642C900E22965 /* LAB_3 */,
-				7844CBA127C91DCA00B4A094 /* LAB_2 */,
-				7844CB9B27C2600A00B4A094 /* LAB_0 */,
+				7844CBA127C91DCA00B4A094 /* LAB_2 */				7844CB9B27C2600A00B4A094 /* LAB_0 */,
 				78052EBD27BA8A7100BB3916 /* LAB_1 */,
 				78052EBC27BA89F300BB3916 /*  DoNotTouch */,
 			);
@@ -320,6 +325,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7844CB9D27C2605D00B4A094 /* SwapValues.swift in Sources */,
+				8794018627D782180046C5D4 /* TableViewController.swift in Sources */,
+				8794018A27D7ABE30046C5D4 /* Cell.swift in Sources */,
 				78052E9127BA89A500BB3916 /* ViewController.swift in Sources */,
 				7844CBA327C91E3C00B4A094 /* ReferenceCycleResolver.swift in Sources */,
 				7844CBB027CADA8000B4A094 /* Shipment.swift in Sources */,
@@ -433,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -488,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -563,7 +570,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K8BB4F885A;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.labs.ios.LABSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -583,7 +590,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K8BB4F885A;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.labs.ios.LABSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

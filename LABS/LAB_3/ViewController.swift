@@ -8,8 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var TableButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func TableTapAction(_ sender: Any) {
+        
     }
 }
 
