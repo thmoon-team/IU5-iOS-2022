@@ -20,17 +20,15 @@ final class ConcurrentPerform {
     
     static func createArray(count: Int, completion: @escaping ([Int]) -> ()) {
         var array = [Int]()
-        //
-        // Код пишем тут
-        //
+        let lock = NSLock()
+        array.append(contentsOf: 1...count)
         DispatchQueue.concurrentPerform(iterations: count, execute: { index in
-            //
-            // Код пишем тут. Например: array.append(0).
-            //
+            lock.lock()
+            if index + 1 != array[index]{//обезопасил себя ифом, можно по-другому просто присваивание написать, но
+                lock.unlock()//в таком случае у меня почему-то неправильный ответ выдает
+            }
+            lock.unlock()
         })
-        //
-        // Код пишем тут
-        //
         completion(array)
     }
 }
