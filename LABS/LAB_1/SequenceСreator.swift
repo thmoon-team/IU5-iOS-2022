@@ -42,6 +42,6 @@ final class SequenceСreator {
         if finalElement > 1{
             return Array(1...finalElement).reversed()
         }
-        return []
+        return []//dl,fmv.knjrlklmvkn,
     }
 }
