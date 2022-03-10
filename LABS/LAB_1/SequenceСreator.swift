@@ -22,9 +22,9 @@ final class SequenceСreator {
     // на выходе получаем: []
     
     static func createSequenceFromZeroTo(finalElement: Int) -> [Int] {
-        //
-        // Код пишем тут
-        //
+        if finalElement > 1{
+            return Array(1...finalElement)
+        }
         return []
     }
     
@@ -39,9 +39,9 @@ final class SequenceСreator {
     // на выходе получаем - []
     
     static func createReversedSequenceToZeroFrom(finalElement: Int) -> [Int] {
-        //
-        // Код пишем тут
-        //
-        return []
+        if finalElement > 1{
+            return Array(1...finalElement).reversed()
+        }
+        return []//dl,fmv.knjrlklmvkn,
     }
 }
