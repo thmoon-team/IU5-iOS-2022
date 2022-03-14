@@ -16,7 +16,7 @@ import Foundation
 // Решение кратко обоснуйте в блоке | Обоснование решения |.
 // Например: /* Я сделал …, т.к. это красиво */
 
-/* | Обоснование решения | */
+/* |Проблема была в storng capturing, для решения использовал unowned, так как self != nil и еще прописал number, чтобы не изменялось его значение| */
 
 
 final class CaptureLists {
@@ -25,19 +25,17 @@ final class CaptureLists {
     
     func disputeWithSheldonCooper(myFavouriteNumber: Int) {
         var number = myFavouriteNumber
-        
-        let setValueInFavouriteNumber: () -> () = {
+        let setValueInFavouriteNumber: () -> () = {[unowned self,number] in
             self.favouriteNumber = number
         }
-        
         let convertToSheldonsFavoriteNumberIfNeeded: () -> () = {
             guard number == 73 else {
                 number = 73
                 return
             }
         }
-        
         convertToSheldonsFavoriteNumberIfNeeded()
         setValueInFavouriteNumber()
     }
 }
+//sa;sasl;a

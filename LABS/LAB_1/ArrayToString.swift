@@ -25,7 +25,43 @@ final class ArrayToStringConverter {
     // на выходе получаем: "1-5,10,14-17,20"
     
     static func convertToString(array: [Int]) -> String {
-        // код писать тут
-        return ""
+        var result = ""
+
+        guard array.count > 0 else{
+          return result
+        }
+
+        var firstElement = array[0]
+        var count = 0
+
+        guard array.count != 1 else {
+          return String(firstElement)
+        }
+        for element in 1..<array.count{
+          if array[element] - array[element - 1] == 1{
+            count += 1
+          }
+          if array[element] - array[element - 1] != 1 || element == array.count-1{
+          result += String(firstElement)
+            if count == 0 && element == array.count-1 {
+                result += "," + String(array[array.count-1])
+            }
+            if count > 0 {
+              if element != array.count-1 {
+                result += "-" + String(array[element-1])
+              }
+              else{
+                result += "-" + String(array[element])
+              }
+              count = 0
+              firstElement = array[element]
+            }
+          if element != array.count-1{
+            result += ","
+          }
+          firstElement = array[element]
+          }
+        }
+        return result
     }
 }
