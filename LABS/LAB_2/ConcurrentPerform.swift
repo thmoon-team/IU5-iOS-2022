@@ -19,18 +19,18 @@ import Foundation
 final class ConcurrentPerform {
     
     static func createArray(count: Int, completion: @escaping ([Int]) -> ()) {
-        var array = [Int]()
-        //
-        // Код пишем тут
-        //
+        guard count > 0 else {
+            return
+        }
+        
+        let lock = NSLock()
+        var array = [Int](repeating: 0, count: count)
+        
         DispatchQueue.concurrentPerform(iterations: count, execute: { index in
-            //
-            // Код пишем тут. Например: array.append(0).
-            //
+            lock.lock()
+            array[index] = index + 1
+            lock.unlock()
         })
-        //
-        // Код пишем тут
-        //
         completion(array)
     }
 }
