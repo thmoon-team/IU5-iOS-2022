@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0552016427F08C50007BF7CE /* LAB_4 in Resources */ = {isa = PBXBuildFile; fileRef = 0552016327F08C50007BF7CE /* LAB_4 */; };
+		0552016527F08C50007BF7CE /* LAB_4 in Resources */ = {isa = PBXBuildFile; fileRef = 0552016327F08C50007BF7CE /* LAB_4 */; };
 		15350EA627C23C01000CDAC3 /* ArrayToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15350EA527C23C01000CDAC3 /* ArrayToString.swift */; };
 		15350EAA27C23D50000CDAC3 /* ArrayToStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15350EA927C23D50000CDAC3 /* ArrayToStringTests.swift */; };
 		78052E8D27BA89A500BB3916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78052E8C27BA89A500BB3916 /* AppDelegate.swift */; };
@@ -46,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0552016327F08C50007BF7CE /* LAB_4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LAB_4; sourceTree = "<group>"; };
 		15350EA527C23C01000CDAC3 /* ArrayToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayToString.swift; sourceTree = "<group>"; };
 		15350EA927C23D50000CDAC3 /* ArrayToStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayToStringTests.swift; sourceTree = "<group>"; };
 		78052E8927BA89A500BB3916 /* LABS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LABS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +136,7 @@
 				7844CBA127C91DCA00B4A094 /* LAB_2 */,
 				7844CB9B27C2600A00B4A094 /* LAB_0 */,
 				78052EBD27BA8A7100BB3916 /* LAB_1 */,
+				0552016327F08C50007BF7CE /* LAB_4 */,
 				78052EBC27BA89F300BB3916 /*  DoNotTouch */,
 			);
 			path = LABS;
@@ -302,6 +306,7 @@
 				78052E9927BA89A700BB3916 /* LaunchScreen.storyboard in Resources */,
 				78052E9627BA89A700BB3916 /* Assets.xcassets in Resources */,
 				78052E9427BA89A500BB3916 /* Main.storyboard in Resources */,
+				0552016427F08C50007BF7CE /* LAB_4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0552016527F08C50007BF7CE /* LAB_4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
